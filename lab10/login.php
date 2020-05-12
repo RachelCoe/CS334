@@ -8,10 +8,10 @@
 
 <body>
     <?php //login.php 
-     $db_hostname = 'sql311.epizy.com'; 
+     $db_hostname = 'hostnamee';  
      $db_database = 'epiz_25052625_labnine'; 
      $db_username = 'epiz_25052625'; 
-     $db_password = 'FOqpLuVYlhRdh'; 
+     $db_password = 'password'; 
 
 //connect to server using mysqli 
      $conn = new mysqli($db_hostname, $db_username, $db_password, $db_database); 

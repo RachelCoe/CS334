@@ -38,7 +38,7 @@
 
           $query = "INSERT INTO CUSTOMER VALUES ($customerID, '$lastName','$firstName','$streetAddress1', '$streetAddress2','$city','$state', $postalCode, '$country','$email', '$homePhone','$facebookUrl','$cellPhone','$password',$salespersonID);";
 
-          $result=mysqli_query($link, $query); 
+          $result=mysqli_query($conn, $query); 
 
           //if successfully insert data into database, displays message "successful". 
           if($result) { 
@@ -48,7 +48,7 @@
           echo "There was an error, please resumbit the form!"; 
           } 
 
-          mysqli_close($link);                 
+          mysqli_close($conn);                 
      }
          
 
