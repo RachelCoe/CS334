@@ -1,0 +1,22 @@
+This assignment was locked Mar 4 at 2:15pm.
+Mid-Term Exam - Associative array and for loop – Create an Array Of the Months of The Year
+
+Create an associative array that assigns the number of days to the months in the year (for example, see: http://www.pitt.edu/~pld7/CS334/notes/ch5morearrays.htmLinks to an external site. ).  Make sure to write the associative array syntax so that the months are listed in the order in which they occur – January, February, March, etc.)
+For purpose of this exercise, just use 28 days for February and don’t worry about leap years
+Write a for (or foreach) loop that prints the months in alphabetic order, and the number of days in that month (hint: use a variation of the sort( ) function) - read more about sorts at: http://www.pitt.edu/~pld7/CS334/notes/ch5morearrays.htmLinks to an external site.
+display your output within the context of a table - for example, one column for the month names, one column for the number of days - make sure to also usehtmlcode (and possibly heredocs) for a table....
+be sure to include in your output ahyperlinkto a text version of your source code or use the show_source function so that I can inspect the code you used.
+submit the URL to your working version of your project, which will also include a link to your source code (just like you do for all of the lab assignments).
+Your output should look something like:
+
+April            30
+
+August         31
+
+December   31
+
+February     28
+
+Etc….
+
+* During class, write your code, provide a sample of your php code, upload it all to your web server, and submit the URL for review by your instructor (just like you've done for all labs up to this point)

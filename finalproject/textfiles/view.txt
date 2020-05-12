@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Rachel Coe, CS334 -->
+<html>
+
+<head>
+    <title>View Inventory</title>
+</head>
+
+<body>
+<?php
+	include 'index.html'; // displays the menu 
+	require_once 'login.php'; //connects to database
+
+
+	$con=mysqli_connect($db_hostname, $db_username, $db_password, $db_database)
+     or die("Unable to connect to MySQL: " . mysql_error());
+
+// test code from a website
+
+$sql="SELECT * FROM INVENTORY ORDER BY type";
+$result=mysqli_query($con,$sql);
+
+$rows = mysqli_num_rows($result); 
+           // get number of rows returned 
+    if ($rows) {
+    echo '<table>';
+    while ($row = mysqli_fetch_array($result)){         
+        echo '<tr>';        
+        echo '<td>Type: ' . $row['type'] . '</td>';         
+        echo '<td>Name: ' . $row['name'] . '</td>';        
+    	echo '<td>Location: ' . $row['location'] . '</td>'; 
+        echo '<td>Price: ' . $row['price'] . '</td>';
+        echo '</tr><br>';        
+    } 
+    echo '</table>';
+};
+ 
+//close connection to database
+mysqli_close($con);
+?>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Rachel Coe, CS334 -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Vacation Site</title>
+
+    <style>
+        body {
+            font-family: helvetica;
+        }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #1b192a;
+}
+
+.active {
+  background-color: #92bdca;
+}
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Vacation Destination Resources</h1>
+    <ul>
+        <div class="nav">
+            <li><a class="active" href="home.php">Home</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="viewregistered.php">View Users</a></li>
+            <li><a href="vacations.php">Vacations</a></li>
+            <li><a href="search.php">Search Inventory</a></li>
+            <li><a href="view.php">View Inventory</a></li>
+            <li style="float:right"><a href="showcode.php">Show Source Code</a></li>
+            <li style="float:right"><a href="showschema.php">Show Schema</a></li>
+
+        </div>
+    </ul>
+
+</body>
+
+</html>

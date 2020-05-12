@@ -1,0 +1,13 @@
+Design a “calculator” program that will include the following:
+
+ 
+
+A function to calculate the factorial of a number (a non-negative integer); the function accepts the number as an argument.
+A function that checks whether a number is prime or not (a prime number is a natural number greater that 1 that has no positive divisors other than 1 and itself.
+A function that calculates the total amount due (food+tax+tip) amount based on entered values for:
+Restaurant total amount before tax (entered by user)
+Calculate the tax, using 7% tax rate
+Tip % the user wishes to provide (use a drop down list of 10%, 15%, 20%)
+Final total = pre-tax restaurant total entered by user + 7% calculated tax amount + tip % selected (apply tip % to the total of the pre-tax amount and the tax amount)
+What should be displayed for the restaurant bill is: pre-tax total, tax amount, tip amount, and final total.
+A hint for the prime number calculator - see example and code at: http://petecs334.epizy.com/CS334/primesample.php (Links to an external site.) - it's a little messy and needs cleaned up, but it should help you if you're struggling with how to arrive at calculating whether a number is prime.

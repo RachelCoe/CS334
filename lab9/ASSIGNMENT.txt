@@ -1,0 +1,68 @@
+Design a two table customer contact database that would store at least the following data items:
+
+CUSTOMER table:
+
+customerID
+last name
+first name
+street address 1
+street address 2
+city
+state
+postal code
+country
+email address
+home phone
+facebook page url
+cell phone
+userid
+password
+salespersonID (salesperson who the customer deals with)
+SALESPERSON table:
+
+salespersonID
+last name
+first name
+street address 1
+street address 2
+city
+state
+postal code
+country
+email address
+home phone
+facebook page url
+cell phone
+ 
+
+Using SQL (try using the phpMyAdmin interface, rather than the command line interface, but be sure to type in your SQL regardless), write code to create and populate the database with at least 10 rows of data in the customer table, and 4 rows of data in the salesperson table.
+
+Perform at least 3 distinct queries of your database and display results based on those queries:
+
+Query#1: get data from the Customer table;
+
+Query #2: get data from the Salesperson table;
+
+Query #3: produce a listing of all the customers each salesperson has - the output should display salesperson last name, salesperson first name, customer last name, and customer first name. (For this query you will have to join the tables).
+
+Your grade will be assessed based upon your utilization of SQL. 
+
+What's required? 
+
+* Provide an html page that display the following: 
+
+1. link to a screenshot and/or a display of your CREATE TABLE sql code that you used to build your tables (this could be a link to a text file)
+
+2. link to a screenshot and/or a display of your INSERT INTO sql code that you used to place data in your tables (this could be a link to a text file)
+
+3. link to a screenshot and/or display of your FIRST QUERY sql code (again, it could be a link to a text file)
+
+4. link to a screenshot and/or display of your SECOND QUERY sql code (again, it could be a link to a text file)
+
+5. link to a screenshot and/or display of your THIRD QUERY sql code (again, it could be a link to a text file)
+
+5. link to a screenshot and or/display of the output of your first query (a link to an image file)
+
+6. link to a screenshot and/or display of the output of your second query (a link to an image file)
+
+7. link to a screenshot and/or display of the output of your third query (a link to an image file)

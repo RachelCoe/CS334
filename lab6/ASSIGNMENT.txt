@@ -1,0 +1,97 @@
+Use PHP to obtain weight and height from a user, calculate the BMI of the user based on what he/she entered, and then provide the results of the BMI calculation and evaluation to the user. Once the user views the information, he/she should fill in a form regarding whether they agree with the feedback (underweight, normal, overweight, obese) when the submit button is clicked, they will be redirected to a confirmation page.  NOTE: First name, last name, and feedback are all REQUIRED and must be filled in by the user.  Further instructions are:
+
+The form should collect a person’s first name, weight, and height
+
+The values entered should then be used to calculate the person’s BMI
+
+The person should then be able to submit information / feedback about their BMI calculation
+
+Use PHP to convert the pounds to kilograms (divide by 2.2046)
+Use PHP to convert inches to meters (multiply inches by .0254)
+Use PHP to calculate BMI: take the calculated kilograms and divide by the result of squaring the calculated meters (for example: 150 pounds = 68.03955 kilograms; and 72 inches = 1.8288 meters; BMI = 68.03955/(1.8288 ^2) = 20.34366 kg/m2
+The BMI value should then be evaluated against the chart below; the program will then display the person’s calculated BMI, and whether the person is underweight, normal weight, overweight, or obese.
+BMI Evaluation Guide
+
+BMI < 18.5 = underweight
+
+18.5 < BMI < 24.9 = normal
+
+25 < BMI < 29.9 = overweight
+
+29.9 < BMI = obese
+
+The BMI value result & evaluation page/content will also provide a feedback form for the user to provide feedback and/or ask questions of what to do about their BMI value.  The form should collect the following component values: First Name, Last Name, Feedback on BMI Calculation Results.  Once the user clicks submit on the form, he/she will be directed to a page that displays what they sent, and thanks them for providing feedback.
+Other requirements:
+Validate the form elements (numbers are entered in number boxes and checked for valid ranges of values, text is entered in text boxes, etc.); don’t worry about validating email addresses
+Use CSS to format text use colors on the pages (I don’t want to see just black text with default font on a white background)
+All form elements should be labeled within the HTML tags so that the user knows what he/she is supposed to enter in the form boxes
+Use Form Method = POST
+The initial BMI entry/calculation form should submit to itself (see notes on how to do this)
+The feedback form will redirect to a confirmation page when someone clicks submit
+BELOW IS ANOTHER EXAMPLE FOR OBTAINING FEEDBACK - BUT IT WON"T WORK - PROVIDED FOR YOUR INFORMATION ONLY!
+
+Conversely - one could try using a PHP mail function to do the feedback - but infinityfree and other host providers tend to restrict this (for security reasons).  If you want to try it use the following values - TO:, SUBJECT:, MESSAGE:, and FROM: (Hint: use the php mail function)
+
+The general format for the PHP mail function is: mail(to,subject,message,headers,parameters);  An example (blocked from truly functioning properly by infinityfree) of how this would work is at: http://petecs334.epizy.com/CS334/forms/emailtest.php (Links to an external site.)
+ For example, try using this template:
+
+ 
+
+<?php
+
+ini_set( 'display_errors', 1 );
+
+        error_reporting( E_ALL );
+
+        $from = "emailtest@YOURDOMAIN";
+
+        $to = "YOUREMAILADDRESS";
+
+        $subject = "PHP Mail Test script";
+
+        $message = "This is a test to check the PHP Mail functionality";
+
+        $headers = "From:" . $from;
+
+ 
+
+        mail($to,$subject,$message, $headers);
+
+        echo "Test email sent";
+
+?>
+
+ 
+
+Other examples that may need further fleshing out:
+
+ 
+
+php
+
+//sending email with the php mail() function
+
+mail (‘user@example.com’,’Subject line here’,’Body of message here’,
+
+‘From: admin@example.com’);
+
+?>
+
+ 
+
+php
+
+$to = "somebody@example.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: webmaster@example.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+
+mail($to,$subject,$txt,$headers);
+?>
+
+  
+
+ NOTE: For testing purposes, if you're using XAMPP, you might have to turn "on" your SMTP server; instructions for how to do this can be found at https://www.geeksforgeeks.org/how-to-configure-xampp-to-send-mail-from-localhost-using-php/ (Links to an external site.)
+
+If you're using InfinityFree - SMTP is not available (see: https://infinityfree.net/support/php-mail/  (Links to an external site.)) ;however there is a way you can accomplish this via Gmail SMTP within your InfinityFree account - see: https://infinityfree.net/support/how-to-send-email-with-gmail-smtp/

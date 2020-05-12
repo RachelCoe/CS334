@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Rachel Coe, CS334 -->
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <?php 
+    include 'index.html';
+    require_once 'login.php'; 
+      
+     $query = "SELECT * from USERS"; 
+     $result = $conn->query($query); 
+     if(!$result) die ("Could not access the database, please try again!"); 
+
+     $rows = $result->num_rows; 
+
+     $userID = $lastName = $firstName = $streetAddress1 = $streetAddress2 = $city = $state = $postalCode = $country = $email = $phone = $password =  "";
+
+     if (isset($_POST['submit'])){
+          $userID = fix_string($_POST['userID']);
+          $lastName = fix_string($_POST['lastName']);
+          $firstName = fix_string($_POST['firstName']);
+          $streetAddress1 = fix_string($_POST['streetAddress1']);
+          $streetAddress2 = fix_string($_POST['streetAddress2']);
+          $city = fix_string($_POST['city']);
+          $state = fix_string($_POST['state']);
+          $postalCode = fix_string($_POST['postalCode']);
+          $country = fix_string($_POST['country']);
+          $email = fix_string($_POST['email']);
+          $phone = fix_string($_POST['phone']);
+          $password = fix_string($_POST['password']);
+
+          $query = "INSERT INTO USER VALUES ($userID, '$lastName','$firstName','$streetAddress1', '$streetAddress2','$city','$state', $postalCode, '$country','$email', '$phone','$password');";
+
+          $result=mysqli_query($conn, $query); 
+
+          //if successfully insert data into database, displays message "successful". 
+          if($result) { 
+          header('Location: thankyou.php'); 
+          } 
+          else { 
+          echo "There was an error, please resumbit the form!"; 
+          } 
+
+          mysqli_close($link);                 
+     }
+    echo <<<_END
+    <br>
+    <div>
+        <form method="post" action="">
+            <label for="userID">User ID:</label>
+            <input type="text"  name="userID" value="$userID"><br>
+            <label for="lastName">Last name:</label>
+            <input type="text"  name="lastName"  value="$lastName"><br>
+            <label for="firstName">First name:</label>
+            <input type="text"  name="firstName"  value="$firstName"><br>
+            <label for="streetAddress1">Street Address 1:</label>
+            <input type="text"  name="streetAddress1"  value="$streetAddress1"><br>
+            <label for="streetAddress2">Street Address 2:</label>
+            <input type="text"  name="streetAddress2"  value="$streetAddress2"><br>
+            <label for="city">City:</label>
+            <input type="text"  name="city"  value="$city"><br>
+            <label for="state">State:</label>
+            <input type="text"  name="state"  value="$state"><br>
+            <label for="postalCode">Postal Code:</label>
+            <input type="text"  name="postalCode"  value="$postalCode"><br>
+            <label for="country">Country:</label>
+            <input type="text"  name="country"  value="$country"><br>
+            <label for="email">Email:</label>
+            <input type="text"  name="email"  value="$email"><br>
+            <label for="phone">Phone:</label>
+            <input type="text"  name="phone"  value="$phone"><br>
+            <label for="password">Password:</label>
+            <input type="text"  name="password"  value="$password"><br>
+            <input type="submit" name = "submit" value="Register">
+        </form> 
+    </div>
+    _END;
+
+  function fix_string($string)
+  {
+    if (get_magic_quotes_gpc()) $string = stripslashes($string);
+    return htmlentities ($string);
+  }
+
+?>
+</body>
+
+</html>

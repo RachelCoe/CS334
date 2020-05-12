@@ -1,0 +1,16 @@
+In this lab, you will be setting up the construct for your lab assignment environment for this course; and you will also flex your muscles with uploading a website template that utilizes CSS (see notes for tips in Step 3 below on obtaining a template).
+
+Step 1 - choose a web host provider that supports PHP - this can be a paid environment (like GoDaddy) or a free environment (like x10Hosting) or infinityfree.net and create an account there.
+
+Step 2 - In the the PHP web host environment, create a folder called CS334; then in that folder create an index file that will contain a listing of links to each of your lab assignments for this course. (See Exercise 2 instructions and example here (Links to an external site.))
+
+Step 3 - Download a website template that utilizes CSS to creatively display its content, using a front-end framework tool like Bootstrap.  The website can be for any subject you wish to display.  Note: make sure to include all graphics as appropriate, and maintain the file structure that was downloaded (images in image folder, etc).  You must save the site, publish it to your web host environment (such as x10hosting, infinityfree, etc, and submit the URL in this drop box.  One can easily find website & CSS templates in front-end framework tools like Bootstrap (see:  https://startbootstrap.com/ (Links to an external site.) and  https://hackr.io/blog/top-bootstrap-alternatives (Links to an external site.) and https://getbootstrap.com/docs/4.4/examples/  (Links to an external site.)and https://geekflare.com/best-css-frameworks/ (Links to an external site.)). 
+
+ 
+
+FYI....while, alternatively, one can find CSS templates at various sites like those listed below - you MUST use a front-end framwork tool such as Bootstrap or one of the others listed at the link above!
+
+https://dcrazed.net/category/website-templates/ (Links to an external site.)
+https://www.w3schools.com/w3css/w3css_templates.asp (Links to an external site.) 
+https://www.mockplus.com/blog/post/free-responsive-html5-web-design-templates (Links to an external site.) 
+w3layouts.com

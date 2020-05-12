@@ -1,0 +1,54 @@
+Using Arrays, for each item below, write a PHP program that will:
+
+1. TEMPERATURES: calculate and display average temperature, seven lowest and highest temperatures. Recorded temperatures : 78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73
+
+      Expected Output :
+            Average Temperature is : 69.8
+
+           List of seven lowest temperatures : 60, 62, 62, 62, 62, 63, 64
+
+          List of seven highest temperatures : 75, 75, 76, 76, 78, 79, 85
+
+2.  NAMES: Write a PHP script to sort the following associative array of players and video game scores :
+
+       array("Sophia"=>"17000","Jacob"=>"12000","William"=>"300","Ramesh"=>"10000") in 
+
+       a) ascending order sort by value
+
+       b) ascending order sort by Key
+
+       c) descending order sorting by Value
+
+        d) descending order sorting by Key
+
+ 
+
+3. COLOR QUOTE: 
+
+     USING the ARRAY: $color = array('white', 'green', 'red', 'blue', 'black'), Write a script which will display the following string:
+
+     "The memory of that scene for me is like a frame of film forever frozen at that moment: the red carpet, the green lawn, the     white house, the leaden sky. The new president and his first lady. - Richard M. Nixon"
+
+    and the words 'red', 'green' and 'white' will come from $color.
+
+4. COLOR SORT: Using the array $color = array('white', 'green', 'red''), write a PHP script which will display the colors in the following way (hint, use a sort to do this) : 
+
+Original Array Content Order : 
+white, green, red,
+
+Modified Array content order:
+
+green
+red
+white
+5. COUNTRIES: Using the array: 
+
+$ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid", "Sweden"=>"Stockholm", "United Kingdom"=>"London", "Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius", "Czech Republic"=>"Prague", "Estonia"=>"Tallin", "Hungary"=>"Budapest", "Latvia"=>"Riga", "Malta"=>"Valetta", "Austria" => "Vienna", "Poland"=>"Warsaw") ;
+
+Create a PHP script which displays the capital and country name from the above array $ceu. Sort the list by the capital of the country
+
+Sample Output :
+
+The capital of Netherlands is Amsterdam 
+The capital of Greece is Athens 
+The capital of Germany is Berlin 

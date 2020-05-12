@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- Rachel Coe, CS334 -->
+<html>
+
+<head>
+    <title>Thank You</title>
+</head>
+
+<body>
+    <?php 
+include 'index.html';// display menu
+echo "<br><br>Thank you! Your data was added to and/or updated in the database"; 
+
+?>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+To get started with PHP, and prepare for future assignments:
+
+
+1. download and install XAMPP to either your local machine or a USB drive. (that is, if you want to have a "local" server to play with)
+2. obtain an account on a third party web host (like infinityfree or 000webhosting or x10hosting.com, etc.)
+3. create the "Tip of the Day" program, (feel free to use external CSS for the various colors and styles.  Details/instructions for the lab requirement can be viewed at:  lab3_instructions_book_page19.pdfPreview the document
+
+ Note: some of the code at the top of that sample is from XHTML standards, which are no longer used - so follow the basic template that is used for HTML5.
+
+
+4. save a version of your code as a .txt file, and then place a line of html code near the top of the page with a hyperlink to the text file, so that I can review all your php code. (for an example see: http://pld7fall2014.x10.mx/tip.php (Links to an external site.)  and http://petecs334.epizy.com/lab2/formtestsample.php (Links to an external site.) - do NOT worry about the content below the quote - it's presented here just as an introduction to content we'll go over next week)
+
+
+5. upload all the files created for "Tip of the Day" to your remote host, and submit the URL below so I can review your coding and output.
+

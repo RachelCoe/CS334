@@ -1,0 +1,19 @@
+For this lab, you are to utilize your XHTML, CSS, PHP, and SQL skills....
+
+Building on what you did in Lab 9, write a program to:
+
+VIEW data in your customer list
+ADD data to your customer table
+EDIT data in your customer table
+SEARCH for data: you can use the same php file, or a new file to SEARCH for data in your customer table; ask for a user's name and searches the database for that user, and returns the results for that user. 
+ 
+
+Submit the URL for your working code, the text file of the working code, and any SQL code that you employed to do this lab.
+
+Your lab grade will be based on your displayed mastery of HMTL, CSS, PHP, and SQL.
+
+ 
+
+Example of Code for adding and viewing data using MySQLi, PHP , and HTML: http://petecs334.epizy.com/CS334/mysqlphp/example/main.php (Links to an external site.) (in particular, see "Show Code Used")
+
+Storyboard for the example above: website_sample_storyboard.pdfPreview the document
